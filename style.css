@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin-top: 10px;
+    line-height: 1.1;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.logo h1 {
+    font-size: 1.3rem;
+    padding-left: 30px; 
+    color: rgb(0, 0, 0);
+}
+
+nav.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+nav.navbar ul li {
+    font-size: 1rem;
+    color: rgb(6, 6, 6);
+}
+
+.container {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 90px;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+.content{
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color:rgb(11, 11, 11);
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+
+.subheadline {
+    font-size: 1.1rem;
+    color: #12201790;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    max-width: 80%;
+}
+
+form {
+    display: flex;
+    gap: 1.5%;
+    margin-bottom: 20px;
+    height: 3rem;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 5px;
+    font-size: 0.85rem;
+    width: 60%;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder {
+    padding: 5px;
+}
+
+button {
+    background-color: #77de9e;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+button:hover {
+    background-color: #20d867;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    font-size: 1rem;
+    color: #333;
+}
+
+.image img {
+    max-width: 700px;
+    height: auto;
+    align-items: center;
+}
+
+.CTA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.privacy {
+    font-size: 0.8rem;
+    margin-top: 7.5px;
+}
+
+.container_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+.benefits_title {
+    margin-top: 100px;
+    font-size: 2.75rem;
+    width: 45%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-beteen;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 20px;
+    align-items: top;
+}
+
+.card {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 50px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.card_img {
+    width: 40%;
+}
+
+.demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+video {
+    width: 30%;
+}
+
+.EOP {
+    margin-bottom: 100px;
+}
