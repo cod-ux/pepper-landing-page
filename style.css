@@ -79,7 +79,7 @@ nav.navbar ul li {
 }
 
 .hero h1 {
-    font-size: 4.75rem;
+    font-size: 4.5rem;
     position: relative;
     margin-bottom: 0;
     background-color: transparent;
@@ -93,7 +93,7 @@ nav.navbar ul li {
     width: 40%;
     margin-top: -1.8%;
     padding-right: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -101,21 +101,55 @@ nav.navbar ul li {
     font-size: 22.5px;
     color: #97A1B6;
     font-weight: 300;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
+    text-align: center;
+    line-height: 35px;
+    width: 42%;
 }
 
 .hero button {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.9rem;
+    font-weight: normal;
     padding: 9px;
     border: none;
     border-radius: 7.5px;
-    background-color: #4E80EE;
+    background-color: #4E80FF;
     color: #fff;
     gap: 5px;
+    margin-bottom: 210px;
 }
 
 .hero button img {
     width: 22.5px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features-mini-title {
+    color: #4E80FF;
+}
+
+.features-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.feature-card {
+    width: 260px;
+    margin-bottom: 100px;
+    margin-top: 50px;
 }
