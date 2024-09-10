@@ -136,20 +136,53 @@ nav.navbar ul li {
 }
 
 .features-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 50px;
 }
 
 .feature-list {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 100px;
+    gap: 25px;
 }
 
 .feature-card {
-    width: 260px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 100px;
     margin-top: 50px;
+    padding: 100px;
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    align-items: flex-start;
+    height: 240px;
+}
+
+.feature-icon img {
+    width: 60px;
+    margin-bottom: 10px;
+    
+}
+
+.feature-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.18rem;
+    color: #18181B;
+}
+
+.feature-divider {
+    height: 1px;
+    background-color: #4E80EE;
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-desc {
+    color: #A1A1A9;
 }
