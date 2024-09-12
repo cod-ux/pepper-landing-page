@@ -134,16 +134,19 @@ nav.navbar ul li {
 
 .section-mini-title {
     color: #4E80FF;
+    margin-bottom: 2.5px;
 }
 
 .section-title {
     font-size: 2.75rem;
-    margin-bottom: 50px;
+    margin-bottom: 22.5px;
 }
 
 .section-title-desc {
     color: #76767b;
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
+    margin-bottom: 75px;
+
 }
 
 .feature-list {
@@ -159,7 +162,6 @@ nav.navbar ul li {
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
-    margin-top: 50px;
     padding: 100px;
     background-color: rgb(234, 234, 234);
     padding: 20px;
@@ -200,3 +202,6 @@ nav.navbar ul li {
     margin-bottom: 410px;
 }
 
+.demo-video {
+    width: 640px;
+}
