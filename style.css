@@ -146,6 +146,7 @@ nav.navbar ul li {
     color: #76767b;
     font-size: 1.4rem;
     margin-bottom: 75px;
+    text-align: center;
 
 }
 
@@ -206,6 +207,11 @@ nav.navbar ul li {
     width: 640px;
 }
 
+.demo-disclaimer {
+    font-size: 1rem;
+    
+}
+
 .pricing {
     display: flex;
     flex-direction: column;
@@ -224,7 +230,7 @@ nav.navbar ul li {
 }
 
 .pricing-card {
-    width: 340px;
+    width: 455px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,7 +242,7 @@ nav.navbar ul li {
     border: none;
     border-radius: 20px;
     align-items: flex-start;
-    height: 320px;
+    padding: 40px;
 }
 
 .pricing-icon img {
@@ -252,25 +258,52 @@ nav.navbar ul li {
     color: #EDEFF2;
 }
 
-.pricing-divider {
-    height: 1px;
-    background-color: #4E80EE;
-    width: 40px;
+.pricing-desc {
+    color: #EDEFF2;
     margin-bottom: 20px;
 }
 
-.pricing-desc {
-    color: #EDEFF2;
+.pricing-desc p {
+    font-size: 1rem;
+    color: #A2A2AA;
+    margin-bottom: 24px;
 }
 
-.pricing-button-area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.pricing-divider {
+    height: 1px;
+    background-color: #3D3D40;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.pricing-desc h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .pricing-button {
     width: 100%;
+    height: 35px;
+    background-color: #4E80EE;
+    border: none;
+    border-radius:10px;
+    font-size: 1rem;
+    color: #EDEFF2
 }
+
+.pricing-desc ul {
+    list-style-image: url("assets/blue-tick.svg");
+    padding-left: 20;
+    list-style-position:outside;
+    margin-left: 30px;
+}
+
+.pricing-desc ul li {
+    position: relative;
+    padding-left: 10px;
+    line-height: 35px;
+    color: #A2A2AA
+}
+
+
 
