@@ -129,15 +129,21 @@ nav.navbar ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 210px;
 }
 
-.features-mini-title {
+.section-mini-title {
     color: #4E80FF;
 }
 
-.features-title {
-    font-size: 2rem;
+.section-title {
+    font-size: 2.75rem;
     margin-bottom: 50px;
+}
+
+.section-title-desc {
+    color: #76767b;
+    font-size: 1.4rem; 
 }
 
 .feature-list {
@@ -145,7 +151,7 @@ nav.navbar ul li {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: 25px;
+    gap: 50px;
 }
 
 .feature-card {
@@ -184,5 +190,13 @@ nav.navbar ul li {
 }
 
 .feature-desc {
-    color: #A1A1A9;
+    color: #76767b;
 }
+
+.demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 410px;
+}
+
