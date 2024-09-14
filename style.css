@@ -217,7 +217,6 @@ nav.navbar ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 410px;
 }
 
 
@@ -227,6 +226,7 @@ nav.navbar ul li {
     align-items: flex-start;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 210px;
 }
 
 .pricing-card {
@@ -253,7 +253,7 @@ nav.navbar ul li {
 
 .pricing-title {
     margin-bottom: 10px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.18rem;
     color: #EDEFF2;
 }
@@ -305,5 +305,14 @@ nav.navbar ul li {
     color: #A2A2AA
 }
 
+.waitlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
+.waitlist h2 span {
+    color:#4E80EE;
+    font-style: italic;
+    font-size: 2.5rem;
+}
