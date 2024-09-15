@@ -22,6 +22,11 @@ header {
 
 }
 
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo {
     display: flex;
     padding: 0px;
@@ -118,7 +123,12 @@ nav.navbar ul li {
     background-color: #4E80FF;
     color: #fff;
     gap: 5px;
-    margin-bottom: 210px;
+    margin-bottom: 50px;
+}
+
+.hero button:hover {
+    background-color: #3662E3;
+    cursor: pointer;
 }
 
 .hero button img {
@@ -129,7 +139,8 @@ nav.navbar ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 210px;
+    padding-top: 160px;
+    
 }
 
 .section-mini-title {
@@ -164,12 +175,13 @@ nav.navbar ul li {
     flex-direction: column;
     margin-bottom: 100px;
     padding: 100px;
-    background-color: rgb(234, 234, 234);
+    background-color: #18181B;
     padding: 20px;
     border: none;
     border-radius: 20px;
     align-items: flex-start;
     height: 240px;
+    margin-bottom: 50px;
 }
 
 .feature-icon img {
@@ -182,7 +194,7 @@ nav.navbar ul li {
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 1.18rem;
-    color: #18181B;
+    color: #EDEFF2;
 }
 
 .feature-divider {
@@ -200,11 +212,13 @@ nav.navbar ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 210px;
+    padding-top: 160px;
+    
 }
 
 .demo-video {
     width: 640px;
+    margin-bottom: 50px;
 }
 
 .demo-disclaimer {
@@ -217,6 +231,7 @@ nav.navbar ul li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 80px;
 }
 
 
@@ -226,7 +241,6 @@ nav.navbar ul li {
     align-items: flex-start;
     justify-content: center;
     gap: 50px;
-    margin-bottom: 210px;
 }
 
 .pricing-card {
@@ -235,7 +249,6 @@ nav.navbar ul li {
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    margin-bottom: 100px;
     padding: 100px;
     background-color: #18181B;
     padding: 20px;
@@ -243,6 +256,7 @@ nav.navbar ul li {
     border-radius: 20px;
     align-items: flex-start;
     padding: 40px;
+    margin-bottom: 210px;
 }
 
 .pricing-icon img {
@@ -291,6 +305,15 @@ nav.navbar ul li {
     color: #EDEFF2
 }
 
+.pricing-button:hover {
+    background-color: #3662E3;
+    cursor: pointer;
+}
+
+.pricing a {
+    width: 100%;
+}
+
 .pricing-desc ul {
     list-style-image: url("assets/blue-tick.svg");
     padding-left: 20;
@@ -311,8 +334,65 @@ nav.navbar ul li {
     align-items: center;
 }
 
+.waitlist-prefix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .waitlist h2 span {
     color:#4E80EE;
     font-style: italic;
     font-size: 2.5rem;
+}
+
+.waitlist p {
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 40px;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #3D3D40;
+    border-radius: 6px;
+    background-color: #18181B;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder {
+    padding: 5px;
+    margin-bottom: 10px;
+    opacity: 50%;
+}
+
+.submit {
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #18181B;
+    color: #EDEFF2;
+    margin-bottom: 210px;
+}
+
+.submit:hover {
+    background-color: #3662E3;
+    cursor: pointer;
+}
+
+.design-note {
+    color: #76767bbf;
 }

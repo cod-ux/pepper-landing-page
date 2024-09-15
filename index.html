@@ -15,15 +15,31 @@
       </div>
       <nav class="navbar">
         <ul class="middle_nav">
-          <li>Features</li>
-          <li>Demo</li>
-          <li>Pricing</li>
+          <li><a href="#features-id" class="custom-link">Features</a></li>
+          <li><a href="#demo-id" class="custom-link">Demo</a></li>
+          <li><a href="#pricing-id" class="custom-link">Pricing</a></li>
         </ul>
       </nav>
       <nav class="navbar">
         <ul class="right_nav">
-          <li><img src="assets/github_white.svg" /></li>
-          <li><img src="assets/In_white.png" /></li>
+          <li>
+            <a
+              href="https://github.com/cod-ux/reporter.git"
+              class="custom-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="assets/github_white.svg"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/suryagganesan"
+              class="custom-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="assets/In_white.png"
+            /></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -34,18 +50,20 @@
         Cut your data cleaning time by 80% with AI that automatically finds and
         fixes anomalies.
       </h2>
-      <button class="hero_signup">
-        <img src="assets/rocket.svg" />Get Early Access
-      </button>
+      <a href="#waitlist-id" class="custom-link">
+        <button class="hero_signup">
+          <img src="assets/rocket.svg" />Get Early Access
+        </button></a
+      >
     </div>
-    <div class="features">
+    <div class="features" id="features-id">
       <p class="section-mini-title">Features</p>
       <h2 class="section-title">Accelerate Data Cleaning with Pepper AI</h2>
       <p class="section-title-desc"></p>
       <div class="feature-list">
         <div class="feature-card">
           <div class="feature-icon"><img src="assets/icon_1.png" /></div>
-          <div class="feature-title">Anomaly Detection</div>
+          <div class="feature-title">Automatic Anomaly Detection</div>
           <div class="feature-divider"></div>
           <div class="feature-desc">
             <p>
@@ -56,7 +74,7 @@
         </div>
         <div class="feature-card">
           <div class="feature-icon"><img src="assets/icon_2.png" /></div>
-          <div class="feature-title">AI-powered Cleaning</div>
+          <div class="feature-title">Autonomous Data Cleaning</div>
           <div class="feature-divider"></div>
           <div class="feature-desc">
             <p>
@@ -68,7 +86,7 @@
         </div>
         <div class="feature-card">
           <div class="feature-icon"><img src="assets/icon_3.png" /></div>
-          <div class="feature-title">Autoamted Workflows</div>
+          <div class="feature-title">Automated Cleaning Workflows</div>
           <div class="feature-divider"></div>
           <div class="feature-desc">
             <p>
@@ -79,12 +97,15 @@
         </div>
       </div>
     </div>
-    <div class="demo">
+    <div class="demo" id="demo-id">
       <p class="section-mini-title">Demo</p>
       <h2 class="section-title">Meet Pepper</h2>
       <p class="section-title-desc">
         Your co-pilot for cleaning data at <i>super speed</i> and reaching
-        insights 200% faster.<br><span class="demo-disclaimer">(The demo shown below may not showcase the complete list of features)</span>
+        insights 200% faster.<br /><span class="demo-disclaimer"
+          >(The demo shown below may not showcase the complete list of
+          features)</span
+        >
       </p>
 
       <video
@@ -94,7 +115,7 @@
         poster="assets/thumbnail.png"
       ></video>
     </div>
-    <div class="pricing">
+    <div class="pricing" id="pricing-id">
       <p class="section-mini-title">Pricing</p>
       <h2 class="section-title">Fasten your Time to Outcomes</h2>
       <p class="section-title-desc"></p>
@@ -115,16 +136,16 @@
               <li>3 Automated Workflows</li>
             </ul>
           </div>
-          <button class="pricing-button">Get Started</button>
+          <a href="#waitlist-id" class="custom-link">
+            <button class="pricing-button">Get Started</button>
+          </a>
         </div>
         <div class="pricing-card">
           <div class="pricing-title">Paid</div>
           <div class="pricing-desc">
-            <p>
-              For enterprise and businesses, based on number of seats.
-            </p>
+            <p>For enterprise and businesses, based on number of seats.</p>
             <div class="pricing-divider"></div>
-            <h3 class="price">£25 per month</h3>
+            <h3 class="price">£24.99 per month</h3>
             <ul>
               <li>User based pricing</li>
               <li>Automatic Anomaly Detection</li>
@@ -133,19 +154,28 @@
               <li>Unlimited Workflows</li>
             </ul>
           </div>
-          <button class="pricing-button">Get Started</button>
+          <a href="#waitlist-id" class="custom-link">
+            <button class="pricing-button">Get Started</button>
+          </a>
         </div>
-    </div>
-    <div class="waitlist">
-      <p class="section-mini-title">Waitlist</p>
-      <h2 class="section-title">Get Pepper <span>A-S-A-P</span></h2>
-      <p class="section-title-desc">
-        Join the waitlist and we'll send you an email on our launch day <span>(30th October)</span> 
-        for you to access Pepper Beta
-      </p>
-      <div class="form">
-        
       </div>
+    </div>
+    <div class="waitlist" id="waitlist-id">
+      <div class="waitlist-prefix">
+        <p class="section-mini-title">Waitlist</p>
+        <h2 class="section-title">Get Pepper <span>A-S-A-P</span></h2>
+        <p class="section-title-desc">
+          Join the waitlist and we'll send you an email on our launch day
+          <span>(30th October)</span> <br />
+          to give you access to Pepper Beta
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" class="name" placeholder="Name" />
+        <input type="email" class="email" placeholder="Email" />
+        <button class="submit">Join the waitlist</button>
+      </div>
+      <p class="design-note">@designed by the pepper team</p>
     </div>
   </body>
 </html>
