@@ -384,7 +384,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder {
     border: none;
     border-radius: 6px;
     background-color: #18181B;
-    color: #EDEFF2;
+    color: #edeffe;
     margin-bottom: 210px;
 }
 
