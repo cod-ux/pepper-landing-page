@@ -295,7 +295,7 @@ nav.navbar ul li {
 
 .section-title-desc {
     color: #76767b;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 75px;
     text-align: center;
 
@@ -354,17 +354,17 @@ nav.navbar ul li {
         flex-direction: column;
         align-items: center;
         padding-top: 0px;
+        padding-bottom: 100px;
         
     }
     
     .section-mini-title {
         color: #4E80FF;
         margin-bottom: 2.5px;
-        font-size: 0.8rem;
     }
     
     .section-title {
-        font-size: 1.75rem;
+        font-size: 2rem;
         margin-bottom: 0px;
         padding-left: 15px;
         padding-right: 15px;
@@ -372,18 +372,20 @@ nav.navbar ul li {
     
     .section-title-desc {
         color: #76767b;
-        font-size: 1.4rem;
-        margin-bottom: 75px;
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 40px;
         text-align: center;
     
     }
     
     .feature-list {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 50px;
+        gap: 40px;
     }
     
     .feature-card {
@@ -398,7 +400,7 @@ nav.navbar ul li {
         border-radius: 20px;
         align-items: flex-start;
         height: 240px;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
     
     .feature-icon img {
@@ -430,19 +432,48 @@ nav.navbar ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-top: 160px;
-    
+    padding-bottom: 100px;
 }
 
-.demo-video {
-    width: 640px;
-    margin-bottom: 130px;
+.iframe-container {
+    justify-content: center;
 }
 
 .demo-disclaimer {
     font-size: 1rem;
-    
+    padding-top: 20px;
+    color: #76767b;
+    text-align: center;
 }
+
+
+@media (max-width: 1110px) {
+        
+    .demo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+
+    .demo-video {
+        width: 100%;
+        padding-top: 28.125%;
+        padding-bottom: 28.125%;
+        margin-bottom: 30px;
+    }
+
+    .demo-disclaimer {
+        font-size: 1rem;
+        padding-top: 20px;
+        color: #76767b;
+        text-align: center;
+    }
+}
+
 
 .pricing {
     display: flex;
@@ -451,7 +482,6 @@ nav.navbar ul li {
     justify-content: center;
     padding-top: 80px;
 }
-
 
 .pricing-list {
     display: flex;
