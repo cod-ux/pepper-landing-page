@@ -600,33 +600,34 @@ nav.navbar ul li {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         padding-top: 80px;
         padding-left: 10px;
         padding-right: 10px;
     }
 
+    .pricing .section-title-desc {
+        padding: 0px;
+        margin: 35px;
+    }
+
     .pricing-list {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 10px;
     }
 
     .pricing-card {
-        width: 455px;
+        width: 350px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: top;
-        padding: 100px;
         background-color: #18181B;
-        padding: 20px;
+        padding: 10px;
         border: none;
         border-radius: 20px;
-        align-items: flex-start;
-        padding: 40px;
+        padding: 30px;
+        margin-bottom: 50px;
     }
 
     .pricing-icon img {
@@ -721,6 +722,23 @@ nav.navbar ul li {
 .waitlist p {
     margin-bottom: 10px;
     line-height: 30px;
+}
+
+@media (max-width: 1110px) {
+
+    .waitlist h2 span {
+        color:#4E80EE;
+        font-style: italic;
+        font-size: 2rem;
+    }
+    
+    .waitlist p {
+        margin-bottom: 10px;
+        line-height: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
 }
 
 .form {
