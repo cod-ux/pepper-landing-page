@@ -355,6 +355,8 @@ nav.navbar ul li {
         align-items: center;
         padding-top: 0px;
         padding-bottom: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
         
     }
     
@@ -374,8 +376,7 @@ nav.navbar ul li {
         color: #76767b;
         font-size: 1rem;
         padding-top: 10px;
-        padding-bottom: 0px;
-        margin-bottom: 40px;
+        padding-bottom: 30px;
         text-align: center;
     
     }
@@ -432,13 +433,13 @@ nav.navbar ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding-top: 160px;
     padding-bottom: 100px;
 }
 
-.iframe-container {
-    justify-content: center;
+.demo-video {
+    width: 640px;
+    margin-bottom: 30px;
 }
 
 .demo-disclaimer {
@@ -457,18 +458,34 @@ nav.navbar ul li {
         align-items: center;
         padding-top: 0px;
         padding-bottom: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
+    .demo .section-title-desc {
+        margin-bottom: 40px;
+    }
+
+    .iframe {
+        aspect-ratio: 16/9;
+    }
+
+    .iframe-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        }
+
     .demo-video {
-        width: 100%;
-        padding-top: 28.125%;
-        padding-bottom: 28.125%;
+        width: 300px;
+        height: 200px;
         margin-bottom: 30px;
     }
 
     .demo-disclaimer {
         font-size: 1rem;
-        padding-top: 20px;
         color: #76767b;
         text-align: center;
     }
@@ -574,6 +591,112 @@ nav.navbar ul li {
     padding-left: 10px;
     line-height: 35px;
     color: #A2A2AA
+}
+
+@media (max-width: 1110px) {
+
+    .pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pricing-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .pricing-card {
+        width: 455px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: top;
+        padding: 100px;
+        background-color: #18181B;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+        align-items: flex-start;
+        padding: 40px;
+    }
+
+    .pricing-icon img {
+        width: 60px;
+        margin-bottom: 10px;
+        
+    }
+
+    .pricing-title {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 1.18rem;
+        color: #EDEFF2;
+    }
+
+    .pricing-desc {
+        color: #EDEFF2;
+        margin-bottom: 20px;
+    }
+
+    .pricing-desc p {
+        font-size: 1rem;
+        color: #A2A2AA;
+        margin-bottom: 24px;
+    }
+
+    .pricing-divider {
+        height: 1px;
+        background-color: #3D3D40;
+        margin-bottom: 20px;
+        width: 100%
+    }
+
+    .pricing-desc h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .pricing-button {
+        width: 100%;
+        height: 35px;
+        background-color: #4E80EE;
+        border: none;
+        border-radius:10px;
+        font-size: 1rem;
+        color: #EDEFF2
+    }
+
+    .pricing-button:hover {
+        background-color: #3662E3;
+        cursor: pointer;
+    }
+
+    .pricing a {
+        width: 100%;
+    }
+
+    .pricing-desc ul {
+        list-style-image: url("assets/blue-tick.svg");
+        padding-left: 20;
+        list-style-position:outside;
+        margin-left: 30px;
+    }
+
+    .pricing-desc ul li {
+        position: relative;
+        padding-left: 10px;
+        line-height: 35px;
+        color: #A2A2AA
+    }
+
 }
 
 .waitlist {
