@@ -1,9 +1,9 @@
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
 
-let d_url = "https://uvujiwiwwoqcfympcfbb.supabase.co";
-let d_solution = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV2dWppd2l3d29xY2Z5bXBjZmJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjY3Mzk4OTUsImV4cCI6MjA0MjMxNTg5NX0.6EkZzAL3iV5nbhzStlBH3gjCUjILk97SUag7yJZhjMk";
+let supabase_url = "https://uvujiwiwwoqcfympcfbb.supabase.co";
+let supabase_solution = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV2dWppd2l3d29xY2Z5bXBjZmJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjY3Mzk4OTUsImV4cCI6MjA0MjMxNTg5NX0.6EkZzAL3iV5nbhzStlBH3gjCUjILk97SUag7yJZhjMk";
 
-const supabase = createClient(d_url, d_solution);
+const supabase = createClient(supabase_url, supabase_solution);
 
 document.getElementById("waitlist-submit").addEventListener('click', function(event){
     event.preventDefault();
