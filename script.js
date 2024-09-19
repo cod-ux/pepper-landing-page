@@ -1,9 +1,15 @@
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+
+
+
+const supabase = createClient(url, key)
+
 document.getElementById("waitlist-submit").addEventListener('click', function(event){
     event.preventDefault();
-    validateInputs();
+    addToWaitlist();
 });
 
-function validateInputs() {
+async function addToWaitlist() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
@@ -23,11 +29,72 @@ function validateInputs() {
     document.getElementById("nameError").textContent = nameError;
     document.getElementById("emailError").textContent = emailError;
 
+    let dbError = "";
+
     if (!nameError && !emailError) {
-        alert("Thank you for joining the Pepper waitlist! We'll send you an email with details on how to access Pepper soon. Have a great day! 😊")
+        try {
+            const { data, error: dbError} = await supabase
+            .from('waitlist')
+            .insert([
+                {"name":name, "email":email}
+            ]);
+
+            if (dbError) {
+                console.log("Error: ", dbError);
+                console.log(dbError.code)
+                if (dbError.code == '23505') {
+                    alert("This email address has already been registered. I know, we're very excited too!")
+                }
+            } else {
+                console.log("Successfully added to db.");
+            alert("Thank you for joining the Pepper waitlist! We'll send you an email with details on how to access Pepper soon. Have a great day! 😊");
+            }
+            
+        }
+         
+        catch (err) {
+            if (err) {
+                console.error("Error Message: ", err);
+            }
+        }
+        
     }
 
 }
 
+// Database entries
 
 
+// Create a single supabase client for interacting with your database
+
+
+
+
+/*
+const { error } = await supabase
+  .from('Waitlist')
+  .insert({ id: 1, name: 'Denmark', email:"suryaganesan925@gmail.com" })
+
+if (error) {
+    console.error(error);
+}
+
+const user = {
+    "name":"test-name",
+    "email":"test-email"
+};
+
+const url = "https://tkevmcwtqxcbhbmxydlr.supabase.co/rest/v1/Waitlist";
+
+fetch(url, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrZXZtY3d0cXhjYmhibXh5ZGxyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjY1MDU4MjIsImV4cCI6MjA0MjA4MTgyMn0.CDbRtooFoA5kj7GMGJUgoWlqtSggo4moGt3msVIDcAU',
+    },
+    body: JSON.stringify(user)
+})
+.then(response => response.json())
+.then(user => console.log("Success: ", user))
+.catch(error => console.error("Error: ", error));
+*/
