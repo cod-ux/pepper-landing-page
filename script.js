@@ -68,3 +68,41 @@ async function addToWaitlist() {
     }
 
 }
+
+// scrollabale hyperlinks
+
+document.getElementById("features-a").addEventListener('click', () => {
+    document.getElementById("features-id").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("demo-a").addEventListener('click', () => {
+    document.getElementById("demo-id").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("pricing-a").addEventListener('click', () => {
+    document.getElementById("pricing-id").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("hero-button").addEventListener('click', () => {
+    document.getElementById("waitlist-id").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("pricing-button-1").addEventListener('click', () => {
+    document.getElementById("waitlist-id").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+document.getElementById("pricing-button-2").addEventListener('click', () => {
+    document.getElementById("waitlist-id").scrollIntoView({
+        behavior: "smooth"
+    });
+});

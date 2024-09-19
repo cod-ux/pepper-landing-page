@@ -56,6 +56,10 @@ nav.navbar ul li {
     font-size: 1rem;
 }
 
+nav.navbar ul li:hover {
+    cursor: pointer;
+}
+
 .middle_nav {
     gap: 30px;
 }
