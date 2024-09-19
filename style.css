@@ -798,6 +798,11 @@ input[type="text"]::placeholder, input[type="email"]::placeholder {
     cursor: pointer;
 }
 
+.error {
+    color: red;
+    font-size: 0.8rem;
+}
+
 .design-note {
     color: #76767bbf;
 }

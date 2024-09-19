@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="script.js"></script>
     <header class="header">
       <div class="logo">
         <img src="assets/logo.svg" />
@@ -176,11 +175,14 @@
         </p>
       </div>
       <div class="form">
-        <input type="text" class="name" placeholder="Name" />
-        <input type="email" class="email" placeholder="Email" />
-        <button class="submit">Join the waitlist</button>
+        <input type="text" class="name" id="name" placeholder="Name" />
+        <div id="nameError" class="error"></div>
+        <input type="email" class="email" id="email" placeholder="Email" />
+        <div id="emailError" class="error"></div>
+        <button class="submit" id="waitlist-submit">Join the waitlist</button>
       </div>
       <p class="design-note">@designed by the pepper team</p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
