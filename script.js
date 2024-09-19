@@ -49,13 +49,35 @@ async function addToWaitlist() {
                 if (dbError.code == '23505') {
                     loading.style.display = "none";
 
-                    console.log("Successfully added to db.");
+                    console.log("Duplicate email.");
                     loading.style.display = "none";
                     
                     const popup = document.getElementById('popup-23505');
                     const popupOverlay = document.getElementById('popupOverlay-23505');
                     const closeBtn = document.getElementById('close-btn-2305');
 
+                    
+                    popup.style.display = 'block';
+                    popupOverlay.style.display = 'block';
+
+                    closeBtn.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                    popupOverlay.style.display = 'none';
+                    });
+
+                    popupOverlay.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                    popupOverlay.style.display = 'none';
+                    });
+                } else if (dbError.code != '23505') {
+                    loading.style.display = "none";
+
+                    console.log("Unexpected error: ", dbError);
+                    loading.style.display = "none";
+                    
+                    const popup = document.getElementById('popup-unex');
+                    const popupOverlay = document.getElementById('popupOverlay-unex');
+                    const closeBtn = document.getElementById('close-btn-unex');
                     
                     popup.style.display = 'block';
                     popupOverlay.style.display = 'block';
