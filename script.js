@@ -24,7 +24,7 @@ function validateInputs() {
     document.getElementById("emailError").textContent = emailError;
 
     if (!nameError && !emailError) {
-        alert("Thank you for joining the waitlist! You should receive an email with info on how to access Pepper. Have a good day :)")
+        alert("Thank you for joining the Pepper waitlist! We'll send you an email with details on how to access Pepper soon. Have a great day! 😊")
     }
 
 }
