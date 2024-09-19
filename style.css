@@ -773,6 +773,7 @@ input[type="text"], input[type="email"] {
     border-radius: 6px;
     background-color: #18181B;
     color: #EDEFF2;
+    border: #3D3D40;
 }
 
 input[type="text"]::placeholder, input[type="email"]::placeholder {
