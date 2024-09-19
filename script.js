@@ -6,7 +6,6 @@ let supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSI
 
 const supabase = createClient(supabase_url, supabase_key);
 const loading = document.getElementById("loading");
-console.log(loading.textContent);
 
 document.getElementById("waitlist-submit").addEventListener('click', function(event){
     event.preventDefault();
@@ -49,12 +48,51 @@ async function addToWaitlist() {
                 console.log(dbError.code)
                 if (dbError.code == '23505') {
                     loading.style.display = "none";
-                    alert("This email address has already been registered. I know, we're very excited too!");
+
+                    console.log("Successfully added to db.");
+                    loading.style.display = "none";
+                    
+                    const popup = document.getElementById('popup-23505');
+                    const popupOverlay = document.getElementById('popupOverlay-23505');
+                    const closeBtn = document.getElementById('close-btn-2305');
+
+                    
+                    popup.style.display = 'block';
+                    popupOverlay.style.display = 'block';
+
+                    closeBtn.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                    popupOverlay.style.display = 'none';
+                    });
+
+                    popupOverlay.addEventListener('click', () => {
+                    popup.style.display = 'none';
+                    popupOverlay.style.display = 'none';
+                    });
                 }
             } else {
                 console.log("Successfully added to db.");
                 loading.style.display = "none";
-                alert("Thank you for joining the Pepper waitlist! We'll send you an email once we've launched, with details on how to use Pepper. See you soon! 😊");
+                
+                const popup = document.getElementById('popup-success');
+                const popupOverlay = document.getElementById('popupOverlay-success');
+                const closeBtn = document.getElementById('close-btn-success');
+
+                
+                popup.style.display = 'block';
+                popupOverlay.style.display = 'block';
+
+                closeBtn.addEventListener('click', () => {
+                popup.style.display = 'none';
+                popupOverlay.style.display = 'none';
+                });
+
+                popupOverlay.addEventListener('click', () => {
+                popup.style.display = 'none';
+                popupOverlay.style.display = 'none';
+                });
+
+                //alert("Thank you for joining the Pepper waitlist! We'll send you an email once we've launched, with details on how to use Pepper. See you soon! 😊");
             }
             
         }
