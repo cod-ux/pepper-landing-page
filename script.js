@@ -1,8 +1,6 @@
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
 
-
-
-const supabase = createClient(url, key)
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_API_KEY)
 
 document.getElementById("waitlist-submit").addEventListener('click', function(event){
     event.preventDefault();
