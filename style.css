@@ -791,12 +791,17 @@ input[type="text"]::placeholder, input[type="email"]::placeholder {
     border-radius: 6px;
     background-color: #18181B;
     color: #EDEFF2;
-    margin-bottom: 210px;
+    margin-bottom: 10px;
 }
 
 .submit:hover {
     background-color: #3662E3;
     cursor: pointer;
+}
+
+#loading {
+    display: none;
+    color: #3662E3;
 }
 
 .error {
@@ -805,5 +810,6 @@ input[type="text"]::placeholder, input[type="email"]::placeholder {
 }
 
 .design-note {
+    margin-top: 210px;
     color: #76767bbf;
 }

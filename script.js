@@ -5,9 +5,12 @@ let supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSI
 // Public key that has limited security access to db
 
 const supabase = createClient(supabase_url, supabase_key);
+const loading = document.getElementById("loading");
+console.log(loading.textContent);
 
 document.getElementById("waitlist-submit").addEventListener('click', function(event){
     event.preventDefault();
+    loading.style.display = 'inline-block';
     addToWaitlist();
 });
 
@@ -45,11 +48,13 @@ async function addToWaitlist() {
                 console.log("Error: ", dbError);
                 console.log(dbError.code)
                 if (dbError.code == '23505') {
-                    alert("This email address has already been registered. I know, we're very excited too!")
+                    loading.style.display = "none";
+                    alert("This email address has already been registered. I know, we're very excited too!");
                 }
             } else {
                 console.log("Successfully added to db.");
-            alert("Thank you for joining the Pepper waitlist! We'll send you an email with details on how to access Pepper soon. Have a great day! 😊");
+                loading.style.display = "none";
+                alert("Thank you for joining the Pepper waitlist! We'll send you an email with details on how to access Pepper soon. Have a great day! 😊");
             }
             
         }
