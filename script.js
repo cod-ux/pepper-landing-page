@@ -54,7 +54,7 @@ async function addToWaitlist() {
             } else {
                 console.log("Successfully added to db.");
                 loading.style.display = "none";
-                alert("Thank you for joining the Pepper waitlist! We'll send you an email with details on how to access Pepper soon. Have a great day! 😊");
+                alert("Thank you for joining the Pepper waitlist! We'll send you an email on our launchday (30th Oct) with details on how to access Pepper. Super excited for you to try the product! 😊");
             }
             
         }
