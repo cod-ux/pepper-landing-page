@@ -375,13 +375,13 @@ nav.navbar ul li:hover {
     border: none;
     border-radius: 20px;
     align-items: flex-start;
-    height: 260px;
+    height: 280px;
     margin-bottom: 50px;
 }
 
 .feature-icon img {
-    width: 60px;
-    margin-bottom: 10px;
+    width: 80px;
+    margin-left: -15px;
     
 }
 
@@ -462,13 +462,13 @@ nav.navbar ul li:hover {
         border: none;
         border-radius: 20px;
         align-items: flex-start;
-        height: 260px;
+        height: 280px;
         margin-bottom: 0px;
     }
     
     .feature-icon img {
-        width: 60px;
-        margin-bottom: 10px;
+        width: 80px;
+        margin-left: -15px;
         
     }
     
