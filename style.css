@@ -375,7 +375,7 @@ nav.navbar ul li:hover {
     border: none;
     border-radius: 20px;
     align-items: flex-start;
-    height: 240px;
+    height: 260px;
     margin-bottom: 50px;
 }
 
@@ -401,6 +401,7 @@ nav.navbar ul li:hover {
 
 .feature-desc {
     color: #76767b;
+    line-height: 20px;
 }
 
 @media (max-width: 1110px) {
@@ -461,7 +462,7 @@ nav.navbar ul li:hover {
         border: none;
         border-radius: 20px;
         align-items: flex-start;
-        height: 240px;
+        height: 260px;
         margin-bottom: 0px;
     }
     
@@ -488,6 +489,10 @@ nav.navbar ul li:hover {
     .feature-desc {
         color: #76767b;
     }   
+}
+
+.disclaimer-blue {
+    color: #3662E3;
 }
 
 .demo {
@@ -524,7 +529,9 @@ nav.navbar ul li:hover {
 
 .demo-disclaimer {
     font-size: 1rem;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #76767b;
     text-align: center;
 }
