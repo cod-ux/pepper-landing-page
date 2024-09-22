@@ -636,8 +636,10 @@ nav.navbar ul li:hover {
     margin-bottom: 20px;
 }
 
-.pricing .price {
-    text-decoration:line-through rgb(185, 56, 56) 3.5px;
+.price {
+    text-decoration:line-through;
+    text-decoration-color: (185, 56, 56);
+    text-decoration-thickness: 5px;
     color: #EDEFF2;
     font-size: 1.2rem;
 }
